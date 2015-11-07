@@ -1,0 +1,11 @@
+@extends ('app')
+
+@start block ('content')
+<ul>
+    @for (post in posts)
+    <li>
+        $!!{post}
+    </li>
+    @end for
+</ul>
+@end block
