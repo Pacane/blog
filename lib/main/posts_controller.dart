@@ -15,7 +15,9 @@ class PostsController {
   index() async {
     var posts = await postService.loadPosts();
 
-    return template('index')..posts = posts;
+    return template('index')
+      ..posts = posts
+      ..seo = new Seo.withDefaultValues();
   }
 
   show({String id}) async {

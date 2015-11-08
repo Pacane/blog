@@ -1,11 +1,12 @@
 part of app;
 
 class Seo {
-  String title;
-  String type;
-  String description;
-  String url;
-  String image;
+  String title = 'Blog - stacktrace.ca';
+  String type = 'website';
+  String description =
+      'Joel Trottier-Hebert (Pacane) - Personal programming blog';
+  String url = 'http://stacktrace.ca';
+  String image = 'https://www.dartlang.org/imgs/dart-logo-wordmark-1200w.png';
 
   Seo.fromPost(Post p) {
     title = p.metadata.title;
@@ -14,4 +15,9 @@ class Seo {
     url = 'http://stacktrace.ca/${p.metadata.slug}';
     image = p.metadata.openGraph.imageUrl;
   }
+
+  Seo.withDefaultValues();
+
+  String toString() =>
+      'title: $title type: $type description: [$description] url: $url image: $image';
 }
