@@ -7,6 +7,7 @@ dependencies:
   sass: "^0.4.2"
   markdown: "^0.8.0"
   js: ^0.6.0-beta
+  yaml: "^2.1.7"
 dev_dependencies:
   test: any
   grinder: any
