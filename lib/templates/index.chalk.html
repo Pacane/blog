@@ -4,7 +4,7 @@
 <ul>
     @for (post in posts)
     <li>
-        $!!{post.content}
+        <p>${post.metadata.title} - ${post.metadata.updatedDate}</p>
     </li>
     @end for
 </ul>

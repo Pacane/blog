@@ -14,6 +14,5 @@ import 'package:yaml/yaml.dart';
 import 'package:app/app/resources/posts_index.dart' as posts_index;
 
 part 'src/posts_service.dart';
-part 'src/markdown_fetcher.dart';
 part 'src/metadata.dart';
 part 'src/post.dart';
