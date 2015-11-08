@@ -4,7 +4,7 @@
 <ul>
     @for (post in posts)
     <li>
-        <a href="${post.metadata.slug}.html">
+        <a href="${post.metadata.slug}">
             <div>${post.metadata.title}</div>
             <span>Updated @ </span> <span class="updated-date">${post.metadata.updatedDate}</span>
         </a>

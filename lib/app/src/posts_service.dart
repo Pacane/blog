@@ -24,6 +24,18 @@ class PostService {
       return a.metadata.updatedDate.compareTo(b.metadata.updatedDate);
     });
 
+    posts.forEach((Post p) {
+      postsBySlug[p.metadata.slug] = p;
+    });
+
     return posts.reversed;
+  }
+
+  Future<Post> getPostBySlug(String slug) async {
+    if (postsBySlug.isEmpty) {
+      await loadPosts();
+    }
+
+    return postsBySlug[slug];
   }
 }

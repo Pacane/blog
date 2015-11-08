@@ -15,3 +15,5 @@ import 'package:slugify/slugify.dart';
 part 'src/posts_service.dart';
 part 'src/metadata.dart';
 part 'src/post.dart';
+part 'src/post_repository.dart';
+part 'src/seo.dart';
