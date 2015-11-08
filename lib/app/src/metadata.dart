@@ -25,8 +25,10 @@ class OpenGraph {
   String imageUrl;
 
   OpenGraph.fromMap(Map json) {
-    imageHeight = json['imageHeight'];
-    imageWidth = json['imageWidth'];
-    imageUrl = json['imageUrl'];
+    Map image = json['image'];
+
+    imageHeight = image['height'];
+    imageWidth = image['width'];
+    imageUrl = image['url'];
   }
 }
