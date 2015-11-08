@@ -12,8 +12,6 @@ class PostsController {
   index() async {
     var posts = await postService.loadPosts();
 
-    print(posts);
-
     return template('index').withScript('posts_script')
     ..posts = posts;
   }
