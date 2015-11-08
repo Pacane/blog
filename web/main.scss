@@ -1,13 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 
 .content {
   // Properties for smaller screens.
   // Nothing is required here because we can use the default styles
+  margin: auto;
+}
 
-  // Properties for larger screens
-  @media (min-width: 800px) {
-    width: 60%;
-    margin: auto;
-  }
+.header {
+  font-family: 'Ubuntu Mono', Arial, serif;
 }

@@ -1,11 +1,14 @@
 part of app;
 
+Slugify _slugify = new Slugify();
+
 class Metadata {
   String title;
   String description;
   List<String> keywords = [];
   DateTime updatedDate;
   OpenGraph openGraph;
+  String get slug => _slugify.slugify(title);
 
   Metadata.fromMap(Map json) {
     title = json['title'];

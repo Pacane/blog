@@ -3,11 +3,15 @@ version: 0.1.0
 environment:
   sdk: '>=1.12.0 <2.0.0'
 dependencies:
-  bridge: '^1.0.0-beta.1'
+  bridge:
+    git:
+      url: git@github.com:Pacane/framework.git
+      ref: fix-watcher-linux
   sass: "^0.4.2"
   markdown: "^0.8.0"
   js: ^0.6.0-beta
   yaml: "^2.1.7"
+  slugify: "^0.1.1"
 dev_dependencies:
   test: any
   grinder: any

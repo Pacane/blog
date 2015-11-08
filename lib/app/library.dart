@@ -10,6 +10,7 @@ import 'dart:async';
 import 'package:markdown/markdown.dart';
 import 'package:yaml/yaml.dart';
 import 'package:app/app/resources/posts_index.dart' as posts_index;
+import 'package:slugify/slugify.dart';
 
 part 'src/posts_service.dart';
 part 'src/metadata.dart';

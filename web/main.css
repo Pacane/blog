@@ -1,6 +1,8 @@
-@media (min-width: 800px) {
-  .content {
-    width: 60%;
-    margin: auto; } }
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+.content {
+  margin: auto; }
+
+.header {
+  font-family: 'Ubuntu Mono', Arial, serif; }
 
 /*# sourceMappingURL=main.css.map */

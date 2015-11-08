@@ -4,7 +4,10 @@
 <ul>
     @for (post in posts)
     <li>
-        <p>${post.metadata.title} - ${post.metadata.updatedDate}</p>
+        <a href="${post.metadata.slug}.html">
+            <div>${post.metadata.title}</div>
+            <span>Updated @ </span> <span class="updated-date">${post.metadata.updatedDate}</span>
+        </a>
     </li>
     @end for
 </ul>

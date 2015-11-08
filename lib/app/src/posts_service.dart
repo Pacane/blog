@@ -20,6 +20,10 @@ class PostService {
       posts.add(post);
     });
 
-    return posts;
+    posts.sort((Post a, Post b) {
+      return a.metadata.updatedDate.compareTo(b.metadata.updatedDate);
+    });
+
+    return posts.reversed;
   }
 }
