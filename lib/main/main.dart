@@ -1,7 +1,5 @@
 library main;
 
-import 'dart:async';
-
 import 'package:bridge/bridge.dart';
 import '../app.dart';
 
