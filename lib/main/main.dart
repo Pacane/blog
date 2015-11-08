@@ -21,7 +21,4 @@ class Main {
     router.get(':id', postsController.show).named('show');
     router.get('posts', postsController.index).named('index');
   }
-
-  tether(Tether tether, TetherManager tethers) {
-  }
 }
