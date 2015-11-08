@@ -1,8 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+body {
+  font-family: "Ubuntu Mono", Arial, serif; }
+
 .content {
   margin: auto; }
 
-.header {
-  font-family: 'Ubuntu Mono', Arial, serif; }
+.header a.home {
+  color: inherit;
+  text-decoration: none; }
+
+h1 {
+  font-size: 2em; }
+
+article h2 {
+  font-size: 1.5em; }
+
+article pre code {
+  font-family: "Inconsolata", Arial, serif; }
 
 /*# sourceMappingURL=main.css.map */

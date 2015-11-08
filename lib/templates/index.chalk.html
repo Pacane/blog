@@ -1,6 +1,8 @@
 @extends ('app')
 
 @start block ('content')
+@include('about_me')
+<h2>Articles</h2>
 <ul>
     @for (post in posts)
     <li>
