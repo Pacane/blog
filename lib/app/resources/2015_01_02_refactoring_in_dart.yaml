@@ -1,0 +1,13 @@
+title: How to refactor an application with Dart
+description: An example demonstrating how to refactor an application with Dart.
+updated_date: 2015-11-08
+keywords:
+  - dartlang
+  - refactor
+  - refactoring
+  - examples
+opengraph:
+  image:
+    width: 480
+    height: 480
+    url: https://pub.dartlang.org/static/img/dart-logo-400x400.png

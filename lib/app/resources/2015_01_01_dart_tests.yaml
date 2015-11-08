@@ -1,0 +1,12 @@
+title: How to test an application with Dart
+description: An example demonstrating how to test an application with Dart and the test package.
+updated_date: 2015-11-08
+keywords:
+  - dartlang
+  - test
+  - example
+opengraph:
+  image:
+    width: 480
+    height: 480
+    url: https://pub.dartlang.org/static/img/dart-logo-400x400.png
