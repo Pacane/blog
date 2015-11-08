@@ -13,11 +13,5 @@ import 'package:app/app_client/hljs.dart' as hljs;
 ///
 
 main() async {
-  // Register shared data structures
-  registerTransport();
-
-  // Connect the tether
-  await globalTether();
-
   querySelectorAll("pre").forEach((e) => hljs.highlightBlock(e));
 }
