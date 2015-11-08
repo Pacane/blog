@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     @include('seo')
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
@@ -9,11 +9,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/languages/dart.min.js"></script>
 </head>
 <body>
+@include('header')
 <div class="content">
-    @include('header')
-    <div class="wrap-cell">
-        @block ('content')
-    </div>
+    @block ('content')
+</div>
 </div>
 </body>
 </html>
