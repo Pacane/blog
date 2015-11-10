@@ -1,33 +1,69 @@
 @extends ('app')
 
 @start block ('content')
-<article>
-$!!{post.content}
-</article>
+<div class="demo-blog demo-blog--blogpost mdl-layout mdl-js-layout has-drawer is-upgraded">
+    <main class="mdl-layout__content">
+        <div class="demo-back">
+            <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="/" title="go back" role="button">
+                <i class="material-icons" role="presentation">arrow_back</i>
+            </a>
+        </div>
+        <div class="demo-blog__posts mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--10-col">
+                <div class="mdl-card__media mdl-color-text--grey-50">
+                    <h1>${post.metadata.title}</h1>
+                </div>
+                <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+                    <div class="minilogo"></div>
+                    <div>
+                        <strong>Joel Trottier-Hebert</strong>
+                        <span>2 days ago</span>
+                    </div>
+                    <div class="section-spacer"></div>
+                    <div class="meta__favorites">
+                        425 <i class="material-icons" role="presentation">favorite</i>
+                        <span class="visuallyhidden">favorites</span>
+                    </div>
+                    <div>
+                        <i class="material-icons" role="presentation">bookmark</i>
+                        <span class="visuallyhidden">bookmark</span>
+                    </div>
+                    <div>
+                        <i class="material-icons" role="presentation">share</i>
+                        <span class="visuallyhidden">share</span>
+                    </div>
+                </div>
+                <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
+                    $!!{post.content}
+                </div>
+            </div>
+        </div>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer--left-section">
+                <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
+                    <span class="visuallyhidden">Twitter</span>
+                </button>
+                <button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
+                    <span class="visuallyhidden">Facebook</span>
+                </button>
+                <button class="mdl-mini-footer--social-btn social-btn social-btn__gplus">
+                    <span class="visuallyhidden">Google Plus</span>
+                </button>
+            </div>
+            <div class="mdl-mini-footer--right-section">
+                <button class="mdl-mini-footer--social-btn social-btn__share">
+                    <i class="material-icons" role="presentation">share</i>
+                    <span class="visuallyhidden">share</span>
+                </button>
+            </div>
+        </footer>
+    </main>
+    <div class="mdl-layout__obfuscator"></div>
+</div>
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
 
-<div id="disqus_thread"></div>
-<script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-     */
-    /*
-     var disqus_config = function () {
-     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-     };
-     */
-    (function() {  // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
+<!--<article>-->
+<!--$!!{post.content}-->
+<!--</article>-->
 
-        s.src = '//stacktrace.disqus.com/embed.js';
-
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 @end block
-
-
-
