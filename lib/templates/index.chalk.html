@@ -3,12 +3,15 @@
 @start block ('content')
 @include('about_me')
 <h2>Articles</h2>
-<ul>
+<ul class="post-list">
     @for (post in posts)
     <li>
         <a href="${post.metadata.slug}">
-            <div>${post.metadata.title}</div>
-            <span>Updated @ </span> <span class="updated-date">${post.metadata.updatedDate}</span>
+            <span>
+                <span class="updated-date">
+                    ${post.metadata.updatedDate}
+                </span> ${post.metadata.title}
+            </span>
         </a>
     </li>
     @end for

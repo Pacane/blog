@@ -9,9 +9,44 @@ body {
   font-family: $font-stack;
 }
 
+@media screen and (min-width: 480px) {
+  .content {
+    width: 60%;
+  }
+
+  .footer {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 8px;
+  }
+
+  .updated-date {
+    display: none;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  border-bottom: solid black 1px;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  padding-left: 5px;
+  background-color: #62CC00;
+}
+
 .content {
-  // Properties for smaller screens.
-  // Nothing is required here because we can use the default styles
+  margin: auto;
+}
+
+.footer {
   margin: auto;
 }
 
@@ -30,4 +65,17 @@ article h2 {
 
 article pre code {
   font-family: $font-coding;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #3D7F00;
+}
+
+ul.post-list {
+  list-style: none;
 }

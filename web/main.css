@@ -3,7 +3,33 @@
 body {
   font-family: "Ubuntu Mono", Arial, serif; }
 
+@media screen and (min-width: 480px) {
+  .content {
+    width: 60%; }
+
+  .footer {
+    width: 60%; } }
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 8px; }
+
+  .updated-date {
+    display: none; } }
+body {
+  margin: 0; }
+
+.header {
+  border-bottom: solid black 1px;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  padding-left: 5px;
+  background-color: #62CC00; }
+
 .content {
+  margin: auto; }
+
+.footer {
   margin: auto; }
 
 .header a.home {
@@ -18,5 +44,15 @@ article h2 {
 
 article pre code {
   font-family: "Inconsolata", Arial, serif; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  color: #3D7F00; }
+
+ul.post-list {
+  list-style: none; }
 
 /*# sourceMappingURL=main.css.map */
