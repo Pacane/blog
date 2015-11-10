@@ -88,7 +88,8 @@ body .demo-blog {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  height: auto; }
+  height: auto;
+  width: 100%; }
 
 .demo-blog .meta > .meta__favorites {
   flex-direction: row;
