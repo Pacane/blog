@@ -42,7 +42,7 @@ body .demo-blog {
 }
 
 .demo-blog.mdl-layout .mdl-layout__content {
-  padding-top: 230px;
+  padding-top: 120px;
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
@@ -240,13 +240,6 @@ body .demo-blog {
   padding-top: 0;
 }
 
-.demo-blog--blogpost .meta + .mdl-card__supporting-text p {
-  //max-width: 512px;
-  //margin: 16px auto;
-  //font-size: 16px;
-  //line-height: 28px;
-}
-
 .demo-blog--blogpost .comments {
   display: flex;
   flex-direction: column;
@@ -367,6 +360,7 @@ body .demo-blog {
   opacity: 0.46;
   border-radius: 2px;
 }
+
 .social-btn__twitter {
   background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png');
 }
