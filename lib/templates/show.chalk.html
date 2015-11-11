@@ -1,5 +1,12 @@
 @extends ('app')
 
 @start block ('content')
+<a href="/" class="fa fa-arrow-left"></a>
+
+<h2>${post.metadata.title}</h2>
+<span class="updatedDate">
+    Updated: ${post.metadata.updatedDate}
+</span>
+
 $!!{post.content}
 @end block

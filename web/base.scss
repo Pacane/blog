@@ -46,11 +46,6 @@ $F_FAMILY: 'Roboto', 'Helvetica', sans-serif;
   text-shadow: none;
 }
 
-::selection {
-  background: $C_PRIMARY;
-  text-shadow: none;
-}
-
 html{
   font-size: 62.5%;
 }
@@ -85,7 +80,7 @@ h3 {
   line-height: 1;
   text-transform: uppercase;
 
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 h2 {

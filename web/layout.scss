@@ -2,6 +2,8 @@ $FOOTER_HEIGHT: 100px;
 
 body {
   background-color: #ccc;
+  background: url("images/background.jpg") no-repeat center center;
+  background-size: cover;
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
@@ -36,8 +38,6 @@ footer {
   height: $FOOTER_HEIGHT;
   width: 100%;
   background-color: #fff;
-
-  padding-top: 30px;
 }
 
 footer .wrapper {
@@ -45,15 +45,19 @@ footer .wrapper {
   padding: 0;
 }
 
-.social-btn {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  margin: 0 16px;
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  opacity: 0.46;
-  border-radius: 2px;
+.socialButton {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.socialButton a {
+  margin-right:15px;
+  vertical-align: middle;
+  line-height: $FOOTER_HEIGHT;
+}
+
+.updatedDate {
+  display: block;
+  margin-bottom: 25px;
+  color: #cccccc;
 }
