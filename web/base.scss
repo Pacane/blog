@@ -14,7 +14,6 @@
  * the License.
  */
 
-
 /**
  * BASE.CSS
  * Base application style
@@ -46,7 +45,7 @@ $F_FAMILY: 'Roboto', 'Helvetica', sans-serif;
   text-shadow: none;
 }
 
-html{
+html {
   font-size: 62.5%;
 }
 
@@ -95,7 +94,6 @@ h2 span,
 h3 span {
   display: block;
 }
-
 
 h1:first-child,
 h2:first-child,
@@ -196,4 +194,14 @@ input[type="submit"] {
   border: none;
   padding: 0;
   cursor: pointer; /* 3 */
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li:before {
+  content: "\f0da";
+  margin-right: 5px;
 }

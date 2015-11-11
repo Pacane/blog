@@ -7,3 +7,4 @@ storage
 packages
 web/*.css
 web/*.css.map
+web/.sass-cache

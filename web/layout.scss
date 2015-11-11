@@ -1,8 +1,7 @@
 $FOOTER_HEIGHT: 100px;
 
 body {
-  background-color: #ccc;
-  background: url("images/background.jpg") no-repeat center center;
+  background-color: #333;
   background-size: cover;
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
@@ -37,7 +36,7 @@ body {
 footer {
   height: $FOOTER_HEIGHT;
   width: 100%;
-  background-color: #fff;
+  background-color: #333;
 }
 
 footer .wrapper {
