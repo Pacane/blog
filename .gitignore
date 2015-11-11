@@ -8,3 +8,4 @@ packages
 web/*.css
 web/*.css.map
 web/.sass-cache
+!web/androidstudio.css
