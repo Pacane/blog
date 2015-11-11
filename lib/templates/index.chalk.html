@@ -6,12 +6,13 @@
 <ul class="post-list">
     @for (post in posts)
     <li>
+        <span class="updatedDate">
+            ${post.metadata.updatedDate}
+        </span>
         <a href="${post.metadata.slug}">
-            <span>
-                <span class="updated-date">
-                    ${post.metadata.updatedDate}
-                </span> ${post.metadata.title}
-            </span>
+            <h3>
+                ${post.metadata.title}
+            </h3>
         </a>
     </li>
     @end for
