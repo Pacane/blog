@@ -1,0 +1,59 @@
+$FOOTER_HEIGHT: 100px;
+
+body {
+  background-color: #ccc;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+.wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto (-$FOOTER_HEIGHT);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.push {
+  height: $FOOTER_HEIGHT;
+  clear: both;
+}
+
+.wrapper {
+  width: 980px;
+  margin: 0 auto;
+  padding: 30px;
+
+  background-color: white;
+}
+
+@media (max-width: 979px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+footer {
+  height: $FOOTER_HEIGHT;
+  width: 100%;
+  background-color: #fff;
+
+  padding-top: 30px;
+}
+
+footer .wrapper {
+  background: transparent;
+  padding: 0;
+}
+
+.social-btn {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin: 0 16px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  opacity: 0.46;
+  border-radius: 2px;
+}

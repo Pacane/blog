@@ -5,3 +5,5 @@
 storage
 !storage/.templates.dart
 packages
+web/*.css
+web/*.css.map

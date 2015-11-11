@@ -1,5 +1,3 @@
-# Hello
-
 ## Post 1
 
 This is the post #1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 

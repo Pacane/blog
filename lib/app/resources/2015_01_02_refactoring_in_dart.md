@@ -1,5 +1,3 @@
-# Hello
-
 ## Post 2
 
 This is the post #2
