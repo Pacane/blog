@@ -34,7 +34,7 @@ class HttpExceptionsServiceProvider extends ServiceProvider {
     var internalErrorTemplate = createErrorTemplateWithSeo()
       ..withData({'exception': exception, 'stackTrace': stack, 'code': 500,});
 
-    return errorTemplate(await internalErrorTemplate());
+    return errorTemplate(await internalErrorTemplate);
   }
 
   /// Turns a [Template] containing a 'code' integer field in the
