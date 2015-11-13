@@ -1,8 +1,8 @@
 @extends ('app')
 
 @start block ('content')
-@include('about_me')
-<h2>Articles</h2>
+@include('about')
+<h1>Articles</h1>
 <ul class="post-list">
     @for (post in posts)
     <li>
@@ -10,9 +10,9 @@
             ${post.metadata.updatedDate}
         </span>
         <a href="${post.metadata.slug}">
-            <h3>
+            <h2>
                 ${post.metadata.title}
-            </h3>
+            </h2>
         </a>
     </li>
     @end for

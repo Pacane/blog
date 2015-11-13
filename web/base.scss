@@ -73,21 +73,25 @@ h6:first-child {
 /* -- TYPO
 ------------------------ */
 
+h1,
 h2,
 h3 {
   font-family: $F_FAMILY;
   line-height: 1;
-  text-transform: uppercase;
 
   margin-bottom: 15px;
 }
 
-h2 {
+h1 {
   font-size: 4rem;
 }
 
-h3 {
+h2 {
   font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 h2 span,
