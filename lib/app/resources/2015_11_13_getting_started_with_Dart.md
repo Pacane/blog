@@ -16,11 +16,11 @@ So the steps are :
 The SDK contains all the files needed to run Dart code. It also comes with several tools like:
 * `dart2js` - Dart to Javascript transpiler
 * `dartfmt` - Code formatter based on the official conventions and guidelines
-* `dartdoc` - Online documentation generator for your applications/libraries
+* `dartdoc` - An online documentation generator for your applications/libraries
 * `pub` - A tool that integrates in the development workflow, that does a bunch of things like fetching dependencies, run your code, run tests, etc.
 
 ### What is Dartium?
-If you want to develop web applications using Dart, you can use Dartium. Dartium is a custom built version of Chromium that uses the Dart VM to run the application in the browser. This allows you to change code and view modifications to your app almost instantly. You can however use any other browser, but the refresh-cycle will be longer as `dart2js` (the Dart to Javascript transpiler needs to do its work).
+If you want to develop web applications using Dart, you can use Dartium. Dartium is a custom built version of Chromium that uses the Dart VM to run the application in the browser. This allows you to change code and view modifications to your application almost instantly. You can however use any other browser, but the refresh-cycle will be longer as `dart2js` (the Dart to Javascript transpiler needs to do its work).
 
 The advantages of using Dartium are:
 * It's faster to develop (faster refresh-cycle)
@@ -37,7 +37,7 @@ The Dart team has given their confidence in WebStorm Community Edition to be the
 Depending on what operating system you are using, the strategy you want to use may differ. One thing to know is that the Dart SDK doesn't natively auto-updates itself. Some people have come up with solutions to this.
 
 ### No self-updater
-If you don't have admin rights on your computer, this is probably what you want to do. All Dart versions can be found on the official website, or the one I personally use is the [archive website](http://gsdview.appspot.com/dart-archive/channels/) where you can also get the bleeding edge versions, to try new experimental features.
+If you don't have administrator rights on your computer, this is probably what you want to do. All Dart versions can be found on the official website, or the one I personally use is the [archive website](http://gsdview.appspot.com/dart-archive/channels/) where you can also get the bleeding edge versions, to try new experimental features.
 
 From there, if you just want to [get the latest stable version](http://gsdview.appspot.com/dart-archive/channels/stable/release/latest/sdk/), get the `.zip` file that corresponds to your system's architecture. Unzip it somewhere. Then you'll have to add Dart's `bin` directory to your path. On Linux you can follow the [following instructions](http://www.cyberciti.biz/faq/unix-linux-adding-path/) to do that.
 
@@ -50,7 +50,7 @@ Now if a new version comes out, you'll have to download the new `.zip` file and 
 If you want a tool that does that for you, I've written a [dart package](https://pub.dartlang.org/packages/dart_updater) for that (Works on Linux, maybe on Mac). There are probably other solutions 
 
 ### Package manager
-The advantages of keeping Dart in the package manager, is to have a version that is always up to date. You need admin access though.
+The advantages of keeping Dart in the package manager, is to have a version that is always up to date. You need administrator rights though.
 
 On Mac [the instructions](https://www.dartlang.org/downloads/mac.html) are pretty straight forward I think.
 
@@ -58,7 +58,7 @@ On Windows [the instructions](https://www.dartlang.org/downloads/windows.html) a
 
 On Linux, things can be a little more tricky.
 
-For Arch you can get [the package](https://www.archlinux.org/packages/community/x86_64/dart) from the the official repositories.
+For Arch you can get [the package](https://www.archlinux.org/packages/community/x86_64/dart) from the official repositories.
 
 For Ubuntu (or any Debian based distribution) you can use the [PPA from Google](https://www.dartlang.org/downloads/linux.html).
 
