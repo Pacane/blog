@@ -1,5 +1,3 @@
-import 'package:bridge/bridge_client.dart';
-import 'package:app/client.dart';
 import "dart:html";
 import 'package:app/app_client/hljs.dart' as hljs;
 

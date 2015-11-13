@@ -9,14 +9,5 @@ class MainServiceProvider extends ServiceProvider {
   load(Container container, Main main, TetherManager tethers) async {
     // Register routes
     await container.resolve(main.routes);
-
-    // Register shared data structures
-    registerTransport();
-
-    // Register tether handler
-    tethers.registerHandler((Tether tether) {
-      // Resolve the tether method on the [Main] class
-      container.resolve(main.tether, injecting: {Tether: tether});
-    });
   }
 }
