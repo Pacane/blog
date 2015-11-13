@@ -1,0 +1,15 @@
+title: Getting started with Dart
+description: Instructions for setuping development environment to develop web and server side applications using Dart.
+updated_date: 2015-11-13
+keywords:
+  - dart
+  - dartlang
+  - getting started
+  - dartium
+  - sdk
+  - webstorm
+opengraph:
+  image:
+    width: 480
+    height: 480
+    url: https://pub.dartlang.org/static/img/dart-logo-400x400.png

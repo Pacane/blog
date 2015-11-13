@@ -27,10 +27,10 @@
 
 /* -- Init
 ------------------------------------------- */
-
 $C_PRIMARY: #FFF;
 $C_TEXT: #000;
 $F_FAMILY: 'Roboto', 'Helvetica', sans-serif;
+$F_FAMILY_BOLD: 'Roboto', 'Helvetica', sans-serif;
 
 * {
   outline: none;
@@ -129,8 +129,8 @@ p a {
 
 b,
 strong {
-  font-family: arial, sans-serif; /* use the bold version of the font-family e.g.: font-family: 'geometria-bold' */
-  font-weight: normal;
+  font-family: $F_FAMILY; /* use the bold version of the font-family e.g.: font-family: 'geometria-bold' */
+  font-weight: bold;
 }
 
 /* -- List
