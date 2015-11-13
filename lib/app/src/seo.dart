@@ -4,7 +4,8 @@ class Seo {
   String title = 'Blog - stacktrace.ca';
   String type = 'website';
   String description =
-      'Joel Trottier-Hebert (Pacane) - Personal programming blog';
+      'Joel Trottier-Hebert (Pacane) - Personal programming blog, ideas and '
+      'examples written in Dart';
   String url = 'http://stacktrace.ca';
   String image = 'https://www.dartlang.org/imgs/dart-logo-wordmark-1200w.png';
 
@@ -17,7 +18,4 @@ class Seo {
   }
 
   Seo.withDefaultValues();
-
-  String toString() =>
-      'title: $title type: $type description: [$description] url: $url image: $image';
 }
