@@ -16,21 +16,25 @@ class HttpExceptionsServiceProvider extends ServiceProvider {
     server.handleException(HttpNotFoundException, notFoundHandler);
   }
 
-  Future<shelf.Response> notFoundHandler(Exception exception, StackTrace stack) async {
-    return errorTemplate(await template('error', withData: {
-      'exception': exception,
-      'stackTrace': stack,
-      'message': 'Oops! That page wasn\'t found!',
-      'code': 404,
-    }));
+  Future<shelf.Response> notFoundHandler(
+      Exception exception, StackTrace stack) async {
+    var notFoundTemplate = createErrorTemplateWithSeo()
+      ..withData({
+        'exception': exception,
+        'stackTrace': stack,
+        'message': 'Oops! That page wasn\'t found!',
+        'code': 404,
+      });
+
+    return errorTemplate(await notFoundTemplate);
   }
 
-  Future<shelf.Response> globalHandler(Object exception, StackTrace stack) async {
-    return errorTemplate(await template('error', withData: {
-      'exception': exception,
-      'stackTrace': stack,
-      'code': 500,
-    }));
+  Future<shelf.Response> globalHandler(
+      Object exception, StackTrace stack) async {
+    var internalErrorTemplate = createErrorTemplateWithSeo()
+      ..withData({'exception': exception, 'stackTrace': stack, 'code': 500,});
+
+    return errorTemplate(await internalErrorTemplate());
   }
 
   /// Turns a [Template] containing a 'code' integer field in the
@@ -39,8 +43,9 @@ class HttpExceptionsServiceProvider extends ServiceProvider {
     return new shelf.Response(
         template.data.containsKey('code') ? template.data['code'] : 500,
         body: template.encoded,
-        headers: {
-          'Content-Type': ContentType.HTML.toString()
-        });
+        headers: {'Content-Type': ContentType.HTML.toString()});
   }
 }
+
+TemplateBuilder createErrorTemplateWithSeo() =>
+    template('error')..seo = new Seo.withDefaultValues();
