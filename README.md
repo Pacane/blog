@@ -1,14 +1,20 @@
-[![Bridge](http://dart-bridge.io/bridge-cover.svg)](http://dart-bridge.io)
+This is my personal blog. It was made with Dart and [Bridge](http://github.com/dart-bridge/framework).
 
-[![Build Status](https://img.shields.io/travis/dart-bridge/framework.svg)](https://travis-ci.org/dart-bridge/framework)
-[![Coverage Status](https://img.shields.io/coveralls/dart-bridge/framework.svg)](https://coveralls.io/r/dart-bridge/framework)
-[![Pub Status](https://img.shields.io/pub/v/bridge.svg)](https://pub.dartlang.org/packages/bridge)
-[![License](https://img.shields.io/github/license/dart-bridge/framework.svg)](https://pub.dartlang.org/packages/bridge)
+## Development
 
-<!--
-Feel free to change this file to describe the project you are working on!
--->
+To run this locally, you have to:
+ 
+* Have [Dart installed](http://stacktrace.ca/getting-started-with-dart)
+* Get all dependencies via `pub get`
+* Run the project from the command line : `dart bridge start, watch`
+* (Optional) I'm coding with `sass`, so if you want your changes to be displayed on refresh, have another tab running this `sass --watch web/ web/`
+* View the result in Dartium @ `http://localhost:1337`
 
-This is a [Bridge](http://github.com/dart-bridge/framework) application.
+## Production
 
-[Documentation](http://dart-bridge.io)
+If you want to deploy it for production :
+
+* Use `dart bridge build, exit` 
+* and then `dart bridge start --production`. This will trigger the `dart2js` transformer and compile the whole thing to JavaScript.
+* You can then view the result in any browser @ `http://address-where-it-is-hosted:1337`
+* (Optional) You can then proxy this app to port 80 using `proxy_pass` on nginx, or Apache.
