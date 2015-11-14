@@ -1,4 +1,4 @@
-Today I show you how to create a project in Dart using the [`stagehand`](https://pub.dartlang.org/packages/stagehand) package. It is a tool that helps creating different types of Dart projects.
+In this post, I will show you how to create a project in Dart using the [`stagehand`](https://pub.dartlang.org/packages/stagehand) package. It is a tool that helps creating different types of Dart projects.
 
 The Dart SDK comes with a tool called `pub` to manage a project's dependencies. It can also install packages globally. This is what we're going to do with `stagehand`. 
 
@@ -60,7 +60,7 @@ Creating console-simple application 'hello-world':
 --> run your app using 'dart bin/main.dart'
 ```
 
-You can now run the project from the command line by typing `dart bin/main.dart` and see the output:
+As you can see, `stagehand` tells you to run the app from the command line by typing `dart bin/main.dart`. It should print:
 > Hello world!
 
 It is also possible to run projects from your IDE.
