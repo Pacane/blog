@@ -25,12 +25,14 @@ The SDK contains all the files needed to run Dart code. It also comes with sever
 If you want to develop web applications using Dart, you can use Dartium. Dartium is a custom built version of Chromium that uses the Dart VM to run the application in the browser. This allows you to change code and view modifications to your application almost instantly. You can however use any other browser, but the refresh-cycle will be longer as `dart2js` (the Dart to JavaScript transpiler needs to do its work).
 
 The advantages of using Dartium are:
+
 * It's faster to develop (faster refresh-cycle)
 * You get to debug actual Dart code. Not JavaScript/source maps.
 
 The advantages of using a standard browser:
+
 * You get the real result, what the users will see in production
-* Dartium can have slow updates, so new browser features can be slow to be supported. _(Note: The Dart team is working on a new system to have faster updates)_
+* Dartium can have slow updates, so new browser features can be slow to be supported. _(Note: [The Dart team is working on a new system to have faster updates](https://github.com/dart-lang/sdk/commit/6a6103318c9ff75c44f0580a773e70ca62bff079#diff-4ac32a78649ca5bdd8e0ba38b7006a1eR90))_
 
 ### What IDE should I use?
 The Dart team has given their confidence in WebStorm as the de-facto IDE. It doesn't mean you can't use anything else. I'm using IntelliJ, and sometimes Vim. I've seen people use Atom or Sublime too. The thing to understand with Dart though, is that most IDEs use `dartanalyzer` or the CLI version available to analyze the code and provide hints to the IDE. So there are a lot of text editor plugins for Dart out there as it's somewhat easier than for other languages to integrate into the IDE.
@@ -43,15 +45,11 @@ For Windows there's a [community driven installer](http://www.gekorm.com/dart-wi
 ### No self-updater
 If you don't have administrator rights on your computer, this is probably what you want to do. All Dart versions can be found on the official website, or the one I personally use is the [archive website](http://gsdview.appspot.com/dart-archive/channels/) where you can also get the bleeding edge versions, to try new experimental features.
 
-From there, if you just want to [get the latest stable version](http://gsdview.appspot.com/dart-archive/channels/stable/release/latest/sdk/), get the `.zip` file that corresponds to your system's architecture. Unzip it somewhere. Then you'll have to add Dart's `bin` directory to your path. On Linux you can follow the [following instructions](http://www.cyberciti.biz/faq/unix-linux-adding-path/) to do that.
-
-```bash
-export PATH=$PATH:$HOME/apps/dart-sdk/bin
-```
+From there, if you just want to [get the latest stable version](http://gsdview.appspot.com/dart-archive/channels/stable/release/latest/sdk/), get the `.zip` file that corresponds to your system's architecture. Unzip it somewhere. Then you'll have to add Dart's binaries directory (`/path/to/dart-sdk/bin`) to your path. On Linux you can follow the [instructions](http://www.cyberciti.biz/faq/unix-linux-adding-path/) to do that.
 
 Now if a new version comes out, you'll have to download the new `.zip` file and overwrite your existing `dart-sdk` directory.
 
-If you want a tool that does that for you, I've written a [dart package](https://pub.dartlang.org/packages/dart_updater) for that (Works on Linux, maybe on Mac). There are also other [solutions](https://github.com/mahonnaise/dart-up). 
+If you want a tool that does this job for you, I've written a [dart package](https://pub.dartlang.org/packages/dart_updater) for that (Works on Linux, maybe on Mac). There are also other [solutions](https://github.com/mahonnaise/dart-up). 
 
 ### Package manager
 The advantages of keeping Dart in the package manager, is to have a version that is always up to date. You need administrator rights though.
@@ -69,7 +67,7 @@ For Ubuntu (or any Debian based distribution) you can use the [PPA from Google](
 *** Make sure you add symlinks to the binaries in `/usr/lib/dart/bin` or add the directory to your `PATH` variable for Ubuntu's PPA. The package is not doing that for you, and you might get stuck executing commands like `pub get` to fetch a project's dependencies. ***
 
 ## Downloading and installing Dartium
-For Windows and Mac, Dartium can be in installed via the package manager (see instructions). As far as I know, on Linux, Dartium isn't shipped with any package. So you have to maintain it.
+For Windows and Mac, Dartium can be installed via the package manager (see instructions). As far as I know, on Linux, Dartium isn't shipped with any package. So you have to maintain it.
 
 _Note: Dartium builds expire after 1 year. So when that happens, just redownload it._
 

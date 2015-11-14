@@ -1,0 +1,14 @@
+title: Creating a Dart project
+description: How to create and run a Dart project with stagehand.
+updated_date: 2015-11-14
+keywords:
+  - dart
+  - dartlang
+  - getting started
+  - stagehand
+  - create project
+opengraph:
+  image:
+    width: 480
+    height: 480
+    url: https://pub.dartlang.org/static/img/dart-logo-400x400.png
