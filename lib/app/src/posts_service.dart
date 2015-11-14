@@ -24,9 +24,7 @@ class PostService {
       return a.metadata.updatedDate.compareTo(b.metadata.updatedDate);
     });
 
-    posts.forEach((Post p) {
-      postsBySlug[p.metadata.slug] = p;
-    });
+    updatePosts(posts);
 
     return posts.reversed;
   }

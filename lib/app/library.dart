@@ -17,3 +17,4 @@ part 'src/metadata.dart';
 part 'src/post.dart';
 part 'src/post_repository.dart';
 part 'src/seo.dart';
+part 'src/rss_entry.dart';
