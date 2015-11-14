@@ -7,7 +7,9 @@ class Metadata {
   String description;
   List<String> keywords = [];
   DateTime updatedDate;
+  DateTime publishedDate;
   OpenGraph openGraph;
+
   String get slug => _slugify.slugify(title);
 
   Metadata.fromMap(Map json) {
@@ -15,6 +17,7 @@ class Metadata {
     description = json['description'];
     keywords = json['keywords'];
     updatedDate = json['updated_date'];
+    publishedDate = json['published_date'];
     openGraph = new OpenGraph.fromMap(json['opengraph']);
   }
 }

@@ -10,5 +10,5 @@ List<Resource> createResource(String postName) {
 }
 
 List<List<Resource>> resources = [
-  createResource('2015_11_13_getting_started_with_Dart')
+  createResource('2015_11_13_getting_started_with_Dart'),
 ];
