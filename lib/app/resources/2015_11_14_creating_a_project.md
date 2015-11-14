@@ -18,6 +18,9 @@ _Note that you can deactivate a global package by writing `pub global deactivate
 
 You should now have `stagehand` installed.
 
+### Where does `pub` download this from?
+`pub` actually uses https://pub.dartlang.org/ as its first source. But you can also install packages from other sources: from path dependencies, to git repositories. See the [documentation](https://www.dartlang.org/tools/pub/cmd/pub-global.html#activating-a-package-with-git) for more information.
+
 ## Running a globally installed package
 There are two ways to run a globally installed package. The first one is by typing :
 
