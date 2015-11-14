@@ -19,14 +19,14 @@ _Note that you can deactivate a global package by writing `pub global deactivate
 You should now have `stagehand` installed.
 
 ### Where does `pub` download this from?
-`pub` actually uses https://pub.dartlang.org/ as its first source. But you can also install packages from other sources: from path dependencies, to git repositories. See the [documentation](https://www.dartlang.org/tools/pub/cmd/pub-global.html#activating-a-package-with-git) for more information.
+`pub` actually uses https://pub.dartlang.org/ as its first source. But you can also install packages from other sources: from path dependencies or from git repositories. See the [documentation](https://www.dartlang.org/tools/pub/cmd/pub-global.html#activating-a-package-with-git) for more information.
 
 ## Running a globally installed package
 There are two ways to run a globally installed package. The first one is by typing :
 
 `pub global run packageName`
 
-But this can be tedious if you run global packages often. The other way is too add pub's global packages path to your system's PATH. The path you want to add is by default `~/.pub-cache/bin` on Linux systems.
+But this can be tedious if you run global packages often. The other way is to add pub's global packages path to your system's PATH. The path you want to add is by default `~/.pub-cache/bin` on Linux systems.
 
 To make sure it's set up correctly, you can type `which stagehand` after installing it, and you should see something like 
 
@@ -66,7 +66,7 @@ You can now run the project from the command line by typing `dart bin/main.dart`
 It is also possible to run projects from your IDE.
 
 ## Opening the project in the IDE
-I'm currently using IntelliJ, but you could also be using WebStorm or anything else really. Just make sure you have the [Dart Plugin](https://plugins.jetbrains.com/plugin/6351) installed.
+I'm currently using IntelliJ, but you could also be using WebStorm or anything else, really. Just make sure you have the [Dart Plugin](https://plugins.jetbrains.com/plugin/6351) installed.
 
 Then you can just import/open the project from there. If you open a file in the IDE, it'll prompt you to enable "Dart Support for the current project".
 

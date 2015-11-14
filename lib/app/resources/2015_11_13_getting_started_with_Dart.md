@@ -49,12 +49,12 @@ From there, if you just want to [get the latest stable version](http://gsdview.a
 
 Now if a new version comes out, you'll have to download the new `.zip` file and overwrite your existing `dart-sdk` directory.
 
-If you want a tool that does this job for you, I've written a [dart package](https://pub.dartlang.org/packages/dart_updater) for that (Works on Linux, maybe on Mac). There are also other [solutions](https://github.com/mahonnaise/dart-up). 
+If you want a tool to keep your SDK up-to-date, I've written a [dart package](https://pub.dartlang.org/packages/dart_updater) for that (Works on Linux, maybe on Mac). There are also other [solutions](https://github.com/mahonnaise/dart-up).
 
 ### Package manager
 The advantages of keeping Dart in the package manager, is to have a version that is always up to date. You need administrator rights though.
 
-On Mac [the instructions](https://www.dartlang.org/downloads/mac.html) are pretty straight forward.
+On Mac [the instructions](https://www.dartlang.org/downloads/mac.html) are pretty straightforward.
 
 On Windows [the instructions](https://www.dartlang.org/downloads/windows.html) are also pretty straight forward. 
 
