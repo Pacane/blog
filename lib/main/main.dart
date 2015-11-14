@@ -17,7 +17,7 @@ class Main {
 
   Main(this.postsController, this.feedController);
 
-  routes(Router router, PostService postService) {
+  routes(Router router) {
     router.get('/favicon.ico', () => '');
 
     router.get('/feed', feedController.index);

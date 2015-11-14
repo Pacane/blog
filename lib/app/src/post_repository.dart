@@ -1,6 +1,6 @@
 part of app;
 
-updatePosts(List<Post> posts) {
+void updatePosts(List<Post> posts) {
   postsBySlug.clear();
 
   posts.forEach((Post p) {
