@@ -22,7 +22,7 @@ The SDK contains all the files needed to run Dart code. It also comes with sever
 * `pub` - A tool that integrates in the development workflow, that does a bunch of things like fetching dependencies, run your code, run tests, etc.
 
 ### What is Dartium?
-If you want to develop web applications using Dart, you can use Dartium. Dartium is a custom built version of Chromium that uses the Dart VM to run the application in the browser. This allows you to change code and view modifications to your application almost instantly. You can however use any other browser, but the refresh-cycle will be longer as `dart2js` (the Dart to JavaScript compiler) needs to do its work).
+If you want to develop web applications using Dart, you can use Dartium. Dartium is a custom built version of Chromium that uses the Dart VM to run the application in the browser. This allows you to change code and view modifications to your application almost instantly. You can however use any other browser, but the refresh-cycle will be longer as `dart2js` (the Dart to JavaScript compiler) needs to do its work.
 
 The advantages of using Dartium are:
 
