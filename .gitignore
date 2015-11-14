@@ -7,6 +7,6 @@ storage
 packages
 web/*.css
 web/*.css.map
-web/.sass-cache
-.sass-cache/
+.sass-cache
+.sass-cache/*
 !web/androidstudio.css
