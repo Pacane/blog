@@ -22,7 +22,7 @@ The SDK contains all the files needed to run Dart code. It also comes with sever
 * `pub` - A tool that integrates in the development workflow, that does a bunch of things like fetching dependencies, run your code, run tests, etc.
 
 ### What is Dartium?
-If you want to develop web applications using Dart, you can use Dartium. Dartium is a custom built version of Chromium that uses the Dart VM to run the application in the browser. This allows you to change code and view modifications to your application almost instantly. You can however use any other browser, but the refresh-cycle will be longer as `dart2js` (the Dart to JavaScript transpiler needs to do its work).
+If you want to develop web applications using Dart, you can use Dartium. Dartium is a custom built version of Chromium that uses the Dart VM to run the application in the browser. This allows you to change code and view modifications to your application almost instantly. You can however use any other browser, but the refresh-cycle will be longer as `dart2js` (the Dart to JavaScript compiler) needs to do its work).
 
 The advantages of using Dartium are:
 
@@ -32,10 +32,10 @@ The advantages of using Dartium are:
 The advantages of using a standard browser:
 
 * You get the real result, what the users will see in production
-* Dartium can have slow updates, so new browser features can be slow to be supported. _(Note: [The Dart team is working on a new system to have faster updates](https://github.com/dart-lang/sdk/commit/6a6103318c9ff75c44f0580a773e70ca62bff079#diff-4ac32a78649ca5bdd8e0ba38b7006a1eR90))_
+* Dartium is often some versions behind the latest Chrome version. So you may have to wait to test the new browser's features in Dartium. _(Note: [The Dart team is working on a new system to have faster updates](https://github.com/dart-lang/sdk/commit/6a6103318c9ff75c44f0580a773e70ca62bff079#diff-4ac32a78649ca5bdd8e0ba38b7006a1eR90))_
 
 ### What IDE should I use?
-The Dart team has given their confidence in WebStorm as the de-facto IDE. It doesn't mean you can't use anything else. I'm using IntelliJ, and sometimes Vim. I've seen people use Atom or Sublime too. The thing to understand with Dart though, is that most IDEs use `dartanalyzer` or the CLI version available to analyze the code and provide hints to the IDE. So there are a lot of text editor plugins for Dart out there as it's somewhat easier than for other languages to integrate into the IDE.
+The Dart team has given their confidence in WebStorm as the de-facto IDE. It doesn't mean you can't use something else. I'm using IntelliJ, and sometimes Vim. I've seen people use Atom or Sublime. The thing to understand with Dart though, is that most IDEs use `dartanalyzer` or the CLI version available to analyze the code and provide hints. So there are a lot of text editor plugins for Dart out there as it's somewhat easier than for other languages to integrate into the IDE.
 
 ## Downloading and installing the SDK
 Depending on what operating system you are using, the strategy you want to use may differ. One thing to know is that the Dart SDK doesn't natively auto-updates itself. Some people have come up with solutions to this.
@@ -54,7 +54,7 @@ If you want a tool that does this job for you, I've written a [dart package](htt
 ### Package manager
 The advantages of keeping Dart in the package manager, is to have a version that is always up to date. You need administrator rights though.
 
-On Mac [the instructions](https://www.dartlang.org/downloads/mac.html) are pretty straight forward I think.
+On Mac [the instructions](https://www.dartlang.org/downloads/mac.html) are pretty straight forward.
 
 On Windows [the instructions](https://www.dartlang.org/downloads/windows.html) are also pretty straight forward. 
 
