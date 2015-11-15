@@ -1,0 +1,52 @@
+body {
+  background-color: #333;
+  background-size: cover;
+  font-family: 'Roboto', 'Helvetica', sans-serif; }
+
+.wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -100px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.push {
+  height: 100px;
+  clear: both; }
+
+.wrapper {
+  width: 980px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white; }
+
+@media (max-width: 979px) {
+  .wrapper {
+    width: 90%; } }
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #333; }
+
+footer .wrapper {
+  background: transparent;
+  padding: 0; }
+
+.socialButton {
+  font-size: 2.5rem;
+  text-align: center; }
+
+.socialButton a {
+  margin-right: 15px;
+  vertical-align: middle;
+  line-height: 100px; }
+
+.updatedDate {
+  display: block;
+  margin-bottom: 25px;
+  color: #cccccc; }
+
+.post-list .updatedDate {
+  margin-bottom: 10px; }
+
+/*# sourceMappingURL=layout.css.map */

@@ -6,7 +6,7 @@ dependencies:
   bridge:
     git:
       url: git@github.com:Pacane/framework.git
-      ref: fix-watcher-linux
+      ref: build-temp-directory
   sass: "^0.4.2"
   markdown: "^0.8.0"
   js: ^0.6.0-beta

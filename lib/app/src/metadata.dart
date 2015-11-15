@@ -16,8 +16,8 @@ class Metadata {
     title = json['title'];
     description = json['description'];
     keywords = json['keywords'];
-    updatedDate = json['updated_date'];
-    publishedDate = json['published_date'];
+    updatedDate = DateTime.parse(json['updated_date']);
+    publishedDate = DateTime.parse(json['published_date']);
     openGraph = new OpenGraph.fromMap(json['opengraph']);
   }
 }

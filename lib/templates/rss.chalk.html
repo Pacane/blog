@@ -4,17 +4,17 @@
     <title>$title</title>
     <subtitle>$subtitle</subtitle>
     <link href="$!!{url}" rel="self"/>
-    <updated>${entries.last.updatedDate}</updated>
+    <updated>${entries.last.updatedDate.toUtc().toIso8601String()}</updated>
     <author>
         <name>$author</name>
     </author>
-    <id>$!!{tag}</id>
+    <id>$!!{'http://stacktrace.ca/feed'}</id>
     @for (entry in entries)
     <entry>
         <title>${entry.title}</title>
         <link href="$!!{entry.url}"/>
-        <id>$!!{entry.tag}</id>
-        <updated>${entry.updatedDate}</updated>
+        <id>$!!{entry.url}</id>
+        <updated>${entry.updatedDate.toUtc().toIso8601String()}</updated>
         <summary>${entry.summary}</summary>
     </entry>
     @end for
