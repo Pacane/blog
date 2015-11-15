@@ -7,7 +7,7 @@
     @for (post in posts)
     <li>
         <span class="updatedDate">
-            ${post.metadata.updatedDate}
+            ${post.metadata.formattedUpdatedDate}
         </span>
         <a href="${post.metadata.slug}">
             <h2>

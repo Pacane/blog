@@ -11,6 +11,10 @@ class Metadata {
   OpenGraph openGraph;
 
   String get slug => _slugify.slugify(title);
+  String get formattedUpdatedDate {
+    final df = new DateFormat('yyyy-MM-dd');
+    return df.format(updatedDate);
+  }
 
   Metadata.fromMap(Map json) {
     title = json['title'];
