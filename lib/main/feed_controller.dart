@@ -21,7 +21,7 @@ class FeedController {
       ..entries = rssEntries);
 
     return new shelf.Response.ok(await rssTemplate.parsed, headers:  {
-      'Content-Type': 'application/rss+xml'
+      'content-type': 'application/atom+xml'
     }, encoding: UTF8);
   }
 }

@@ -26,6 +26,7 @@ class Main {
     router.get('/posts', postsController.index).named('index');
 
     router.get('/', postsController.index).named('index');
+
     router.get('/:id', postsController.show).named('show');
   }
 }
