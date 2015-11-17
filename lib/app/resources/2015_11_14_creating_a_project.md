@@ -19,7 +19,7 @@ _Note that you can deactivate a global package by writing `pub global deactivate
 You should now have `stagehand` installed.
 
 ### Where does `pub` download this from?
-`pub` actually uses https://pub.dartlang.org/ as its first source. But you can also install packages from other sources: from path dependencies or from git repositories. See the [documentation](https://www.dartlang.org/tools/pub/cmd/pub-global.html#activating-a-package-with-git) for more information.
+`pub` uses [the pub website](https://pub.dartlang.org/) as its first source to search for packages. But you can also install them from other sources: from path dependencies or from git repositories. See the [documentation](https://www.dartlang.org/tools/pub/cmd/pub-global.html#activating-a-package-with-git) for more information.
 
 ## Running a globally installed package
 There are two ways to run a globally installed package. The first one is by typing :
@@ -61,7 +61,10 @@ Creating console-simple application 'hello-world':
 ```
 
 As you can see, `stagehand` tells you to run the app from the command line by typing `dart bin/main.dart`. It should print:
-> Hello world!
+
+```bash
+Hello world!
+```
 
 It is also possible to run projects from your IDE.
 
