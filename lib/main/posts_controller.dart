@@ -30,11 +30,4 @@ class PostsController {
       ..post = post
       ..seo = seo;
   }
-
-  seotest() async {
-    var seo = new Seo.withDefaultValues();
-
-    return template('seotest').withScript('posts_script')
-      ..seo = seo;
-  }
 }
