@@ -27,6 +27,8 @@ class Main {
 
     router.get('/', postsController.index).named('index');
 
+    router.get('/seotest', postsController.seotest).named('seotest');
+
     router.get('/:id', postsController.show).named('show');
   }
 }
