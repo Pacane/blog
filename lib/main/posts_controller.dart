@@ -32,22 +32,9 @@ class PostsController {
   }
 
   seotest() async {
-    List<Post> posts = await postService.loadPosts();
+    var seo = new Seo.withDefaultValues();
 
-    var rssEntries = posts.map((Post p) {
-      return new RssEntry.fromPost(p);
-    });
-
-    var rssTemplate = await (template('rss')
-      ..title = 'Blog @ stacktrace.ca'
-      ..subtitle = 'Latest posts'
-      ..url = 'http://stacktrace.ca/feed'
-      ..author = 'Joel Trottier-Hebert'
-      ..tag = 'feed:stacktrace.ca,blog:/feed'
-      ..entries = rssEntries);
-
-    return new shelf.Response.seeOther('http://google.ca', body: await rssTemplate.parsed, headers:  {
-      'content-type': 'application/atom+xml'
-    }, encoding: UTF8);
+    return template('seotest').withScript('posts_script')
+      ..seo = seo;
   }
 }
