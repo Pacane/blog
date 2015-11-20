@@ -4,6 +4,7 @@ import 'package:bridge/bridge.dart';
 import 'package:shelf/shelf.dart' as shelf;
 import '../app.dart';
 import 'dart:convert';
+import 'dart:io';
 
 /// Controllers
 part 'posts_controller.dart';

@@ -21,7 +21,7 @@ class PostsController {
     var post = await postService.getPostBySlug(id);
 
     if (post == null) {
-      throw new Exception("Post not found");
+      return errorTemplate(await notFoundTemplate());
     }
 
     var seo = new Seo.fromPost(post);

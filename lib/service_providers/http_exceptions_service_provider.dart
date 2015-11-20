@@ -18,34 +18,13 @@ class HttpExceptionsServiceProvider extends ServiceProvider {
 
   Future<shelf.Response> notFoundHandler(
       Exception exception, StackTrace stack) async {
-    var notFoundTemplate = createErrorTemplateWithSeo()
-      ..withData({
-        'exception': exception,
-        'stackTrace': stack,
-        'message': 'Oops! That page wasn\'t found!',
-        'code': 404,
-      });
-
-    return errorTemplate(await notFoundTemplate);
+    return errorTemplate(
+        await notFoundTemplate(exception: exception, stack: stack));
   }
 
   Future<shelf.Response> globalHandler(
       Object exception, StackTrace stack) async {
-    var internalErrorTemplate = createErrorTemplateWithSeo()
-      ..withData({'exception': exception, 'stackTrace': stack, 'code': 500,});
-
-    return errorTemplate(await internalErrorTemplate);
-  }
-
-  /// Turns a [Template] containing a 'code' integer field in the
-  /// data map, into a [shelf.Response]
-  shelf.Response errorTemplate(Template template) {
-    return new shelf.Response(
-        template.data.containsKey('code') ? template.data['code'] : 500,
-        body: template.encoded,
-        headers: {'Content-Type': ContentType.HTML.toString()});
+    return errorTemplate(
+        await internalErrorTemplate(exception: exception, stack: stack));
   }
 }
-
-TemplateBuilder createErrorTemplateWithSeo() =>
-    template('error')..seo = new Seo.withDefaultValues();
