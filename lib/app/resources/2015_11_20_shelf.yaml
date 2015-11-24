@@ -1,13 +1,14 @@
-title: Shelf
-description: How to create and run a Dart project using stagehand.
+title: Shelf: The building blocks for servers in Dart
+description: A tutorial for the shelf package in Dart. An overview of the key concepts surrounding shelf.
 published_date: 2015-11-14
 updated_date: 2015-11-14
 keywords:
   - dart
   - dartlang
-  - getting started
-  - stagehand
-  - create project
+  - tutorial
+  - shelf
+  - web server
+  - backend
 opengraph:
   image:
     width: 480
