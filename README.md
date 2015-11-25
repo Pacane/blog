@@ -7,7 +7,7 @@ To run this locally, you have to:
 * Have [Dart installed](http://stacktrace.ca/getting-started-with-dart)
 * Get all dependencies via `pub get`
 * Run the project from the command line : `dart bridge start, watch`
-* (Optional) I'm coding with `sass`, so if you want your changes to be displayed on refresh, have another tab running this `sass --watch web/ web/`
+* (Optional) I'm coding with `sass`, so if you want your changes to be displayed on refresh, have another tab running this `sass --watch web/css web/css`
 * View the result in Dartium @ `http://localhost:1337`
 
 ## Production
