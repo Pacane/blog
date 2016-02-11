@@ -1,0 +1,15 @@
+title: JSON serialization in Dart with Dogma
+description: JSON serialization and deserialization in Dart with Dogma.
+published_date: 2016-02-11
+updated_date: 2016-02-11
+keywords:
+  - dart
+  - dartlang
+  - dogma
+  - json
+  - serialization
+opengraph:
+  image:
+    width: 480
+    height: 480
+    url: https://pub.dartlang.org/static/img/dart-logo-400x400.png
