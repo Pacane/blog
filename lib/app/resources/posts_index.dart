@@ -2,6 +2,12 @@ library post_index;
 
 const String resourceDirectoryName = 'package:app/app/resources/';
 
+class Resource {
+  final String path;
+
+  Resource(this.path);
+}
+
 List<Resource> createResource(String postName) {
   return [
     new Resource('$resourceDirectoryName$postName.md'),
