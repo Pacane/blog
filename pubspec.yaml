@@ -13,6 +13,7 @@ dependencies:
   yaml: "^2.1.7"
   slugify: "^0.1.1"
   intl: "^0.12.4+2"
+  resource: '^2.1.2'
 dev_dependencies:
   test: any
   grinder: any

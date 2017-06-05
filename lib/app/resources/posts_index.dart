@@ -1,12 +1,8 @@
 library post_index;
 
+import 'package:resource/resource.dart';
+
 const String resourceDirectoryName = 'package:app/app/resources/';
-
-class Resource {
-  final String path;
-
-  Resource(this.path);
-}
 
 List<Resource> createResource(String postName) {
   return [
